@@ -134,7 +134,7 @@ jobs:
           Find-Dotnet
           ./tools/findMissingNotices.ps1 -Fix
       - name: Upload cgmanifest
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v7
         if: always() && env.CGMANIFEST_PATH != ''
         with:
           name: cgmanifest

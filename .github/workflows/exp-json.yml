@@ -69,7 +69,7 @@ jobs:
           $expFeaturesJson | Out-File $newFileName -Force
 
       - name: Upload experimental features windows
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v7
         with:
           name: experimentalJson
           path: experimental-feature-*-new.json
